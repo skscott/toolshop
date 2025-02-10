@@ -1,0 +1,223 @@
+[
+    {
+      "id": 1,
+      "name": "Laptop",
+      "description": "15-inch laptop with Intel Core i7 processor, 16GB RAM, 512GB SSD.",
+      "quantity_in_stock": 50,
+      "price_per_unit": 1200.00,
+      "category": "electronics",
+      "supplier": "Tech Supplies Co.",
+      "barcode": "1234567890123",
+      "purchase_date": "2024-01-15"
+    },
+    {
+      "id": 2,
+      "name": "Smartphone",
+      "description": "6.5-inch smartphone with 128GB storage, 6GB RAM, dual cameras.",
+      "quantity_in_stock": 120,
+      "price_per_unit": 799.99,
+      "category": "electronics",
+      "supplier": "Mobile Devices Ltd.",
+      "barcode": "2345678901234",
+      "purchase_date": "2024-02-10"
+    },
+    {
+      "id": 3,
+      "name": "Office Chair",
+      "description": "Ergonomic office chair with adjustable height and lumbar support.",
+      "quantity_in_stock": 30,
+      "price_per_unit": 199.99,
+      "category": "furniture",
+      "supplier": "Comfort Furniture Co.",
+      "barcode": "3456789012345",
+      "purchase_date": "2024-01-20"
+    },
+    {
+      "id": 4,
+      "name": "Desk Lamp",
+      "description": "LED desk lamp with adjustable brightness and color temperature.",
+      "quantity_in_stock": 75,
+      "price_per_unit": 45.99,
+      "category": "office supplies",
+      "supplier": "Bright Lighting Inc.",
+      "barcode": "4567890123456",
+      "purchase_date": "2024-03-01"
+    },
+    {
+      "id": 5,
+      "name": "Wireless Mouse",
+      "description": "Rechargeable wireless mouse with ergonomic design and quiet click.",
+      "quantity_in_stock": 200,
+      "price_per_unit": 25.50,
+      "category": "electronics",
+      "supplier": "Gadget Hub Ltd.",
+      "barcode": "5678901234567",
+      "purchase_date": "2024-02-25"
+    },
+    {
+      "id": 6,
+      "name": "Bluetooth Speaker",
+      "description": "Portable Bluetooth speaker with waterproof and shockproof design.",
+      "quantity_in_stock": 40,
+      "price_per_unit": 65.00,
+      "category": "electronics",
+      "supplier": "Sound Systems Co.",
+      "barcode": "6789012345678",
+      "purchase_date": "2024-01-30"
+    },
+    {
+      "id": 7,
+      "name": "Projector",
+      "description": "Portable 1080p projector with HDMI and USB ports.",
+      "quantity_in_stock": 15,
+      "price_per_unit": 350.00,
+      "category": "electronics",
+      "supplier": "Projector World",
+      "barcode": "7890123456789",
+      "purchase_date": "2024-02-05"
+    },
+    {
+      "id": 8,
+      "name": "Electric Kettle",
+      "description": "1.7L electric kettle with rapid boiling and automatic shut-off.",
+      "quantity_in_stock": 60,
+      "price_per_unit": 40.00,
+      "category": "appliances",
+      "supplier": "Home Essentials Co.",
+      "barcode": "8901234567890",
+      "purchase_date": "2024-01-25"
+    },
+    {
+      "id": 9,
+      "name": "Standing Desk",
+      "description": "Adjustable height standing desk with large work surface.",
+      "quantity_in_stock": 25,
+      "price_per_unit": 299.99,
+      "category": "furniture",
+      "supplier": "Ergo Furniture Ltd.",
+      "barcode": "9012345678901",
+      "purchase_date": "2024-02-18"
+    },
+    {
+      "id": 10,
+      "name": "Bluetooth Headphones",
+      "description": "Noise-cancelling over-ear Bluetooth headphones with long battery life.",
+      "quantity_in_stock": 80,
+      "price_per_unit": 120.00,
+      "category": "electronics",
+      "supplier": "AudioTech Co.",
+      "barcode": "1234567890124",
+      "purchase_date": "2024-01-22"
+    },
+    {
+      "id": 11,
+      "name": "4K Monitor",
+      "description": "27-inch 4K monitor with ultra-thin bezels and IPS display.",
+      "quantity_in_stock": 50,
+      "price_per_unit": 350.00,
+      "category": "electronics",
+      "supplier": "Display Solutions Ltd.",
+      "barcode": "2345678901235",
+      "purchase_date": "2024-03-10"
+    },
+    {
+      "id": 12,
+      "name": "Desk Organizer",
+      "description": "Wooden desk organizer with multiple compartments for office supplies.",
+      "quantity_in_stock": 120,
+      "price_per_unit": 35.00,
+      "category": "office supplies",
+      "supplier": "Organize It Co.",
+      "barcode": "3456789012346",
+      "purchase_date": "2024-02-28"
+    },
+    {
+      "id": 13,
+      "name": "Smartwatch",
+      "description": "Fitness tracker smartwatch with heart rate monitor and step counter.",
+      "quantity_in_stock": 70,
+      "price_per_unit": 149.99,
+      "category": "electronics",
+      "supplier": "Wearables Co.",
+      "barcode": "4567890123457",
+      "purchase_date": "2024-01-10"
+    },
+    {
+      "id": 14,
+      "name": "Coffee Maker",
+      "description": "Automatic coffee maker with programmable settings and built-in grinder.",
+      "quantity_in_stock": 40,
+      "price_per_unit": 120.00,
+      "category": "appliances",
+      "supplier": "BrewTech Ltd.",
+      "barcode": "5678901234568",
+      "purchase_date": "2024-02-08"
+    },
+    {
+      "id": 15,
+      "name": "Digital Camera",
+      "description": "Compact digital camera with 16MP sensor and 3x optical zoom.",
+      "quantity_in_stock": 30,
+      "price_per_unit": 250.00,
+      "category": "electronics",
+      "supplier": "PhotoTech Co.",
+      "barcode": "6789012345679",
+      "purchase_date": "2024-03-12"
+    },
+    {
+      "id": 16,
+      "name": "Smart Thermostat",
+      "description": "Wi-Fi enabled smart thermostat with energy-saving features.",
+      "quantity_in_stock": 50,
+      "price_per_unit": 130.00,
+      "category": "appliances",
+      "supplier": "HomeTech Inc.",
+      "barcode": "7890123456780",
+      "purchase_date": "2024-02-14"
+    },
+    {
+      "id": 17,
+      "name": "Electric Toothbrush",
+      "description": "Rechargeable electric toothbrush with multiple brushing modes.",
+      "quantity_in_stock": 100,
+      "price_per_unit": 65.00,
+      "category": "appliances",
+      "supplier": "CleanTech Co.",
+      "barcode": "8901234567891",
+      "purchase_date": "2024-03-05"
+    },
+    {
+      "id": 18,
+      "name": "Tablet",
+      "description": "10-inch tablet with 64GB storage and 4GB RAM.",
+      "quantity_in_stock": 60,
+      "price_per_unit": 200.00,
+      "category": "electronics",
+      "supplier": "GadgetPro Ltd.",
+      "barcode": "9012345678902",
+      "purchase_date": "2024-02-20"
+    },
+    {
+      "id": 19,
+      "name": "Fitness Tracker",
+      "description": "Smart fitness tracker with sleep monitoring and GPS.",
+      "quantity_in_stock": 90,
+      "price_per_unit": 80.00,
+      "category": "electronics",
+      "supplier": "FitTech Ltd.",
+      "barcode": "1234567890125",
+      "purchase_date": "2024-01-18"
+    },
+    {
+      "id": 20,
+      "name": "Wireless Charger",
+      "description": "Wireless charging pad with fast charging for Qi-enabled devices.",
+      "quantity_in_stock": 150,
+      "price_per_unit": 30.00,
+      "category": "electronics",
+      "supplier": "Tech Supplies Co.",
+      "barcode": "2345678901236",
+      "purchase_date": "2024-02-22"
+    }
+  ]
+  

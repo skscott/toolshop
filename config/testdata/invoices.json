@@ -1,0 +1,182 @@
+[
+    {
+      "id": 1,
+      "customer": 1,
+      "date_issued": "2025-01-01",
+      "due_date": "2025-01-30",
+      "total_amount": 150.75,
+      "amount_due": 150.75,
+      "status": "NEW"
+    },
+    {
+      "id": 2,
+      "customer": 2,
+      "date_issued": "2025-01-05",
+      "due_date": "2025-02-05",
+      "amount_due": 225.00,
+      "total_amount": 225.00,
+      "status": "INPROGRESS"
+    },
+    {
+      "id": 3,
+      "customer": 3,
+      "date_issued": "2025-01-10",
+      "due_date": "2025-02-10",
+      "total_amount": 99.99,
+      "amount_due": 99.99,
+      "status": "COMPLETED"
+    },
+    {
+      "id": 4,
+      "customer": 4,
+      "date_issued": "2025-01-15",
+      "due_date": "2025-02-15",
+      "amount_due": 320.00,
+      "total_amount": 320.00,
+      "status": "CANCELLED"
+    },
+    {
+      "id": 5,
+      "customer": 5,
+      "date_issued": "2025-01-20",
+      "due_date": "2025-02-20",
+      "total_amount": 400.50,
+      "amount_due": 400.50,
+      "status": "NEW"
+    },
+    {
+      "id": 6,
+      "customer": 6,
+      "date_issued": "2025-01-25",
+      "due_date": "2025-02-25",
+      "total_amount": 185.00,
+      "amount_due": 185.00,
+      "status": "INPROGRESS"
+    },
+    {
+      "id": 7,
+      "customer": 7,
+      "date_issued": "2025-01-30",
+      "due_date": "2025-02-28",
+      "total_amount": 270.30,
+      "amount_due": 270.30,
+      "status": "COMPLETED"
+    },
+    {
+      "id": 8,
+      "customer": 8,
+      "date_issued": "2025-02-01",
+      "due_date": "2025-03-01",
+      "total_amount": 120.00,
+      "amount_due": 120.00,
+      "status": "CANCELLED"
+    },
+    {
+      "id": 9,
+      "customer": 9,
+      "date_issued": "2025-02-05",
+      "due_date": "2025-03-05",
+      "total_amount": 350.00,
+      "amount_due": 350.00,
+      "status": "NEW"
+    },
+    {
+      "id": 10,
+      "customer": 10,
+      "date_issued": "2025-02-10",
+      "due_date": "2025-03-10",
+      "total_amount": 490.25,
+      "amount_due": 490.25,
+      "status": "INPROGRESS"
+    },
+    {
+      "id": 11,
+      "customer": 11,
+      "date_issued": "2025-02-15",
+      "due_date": "2025-03-15",
+      "total_amount": 275.75,
+      "amount_due": 275.75,
+      "status": "COMPLETED"
+    },
+    {
+      "id": 12,
+      "customer": 12,
+      "date_issued": "2025-02-20",
+      "due_date": "2025-03-20",
+      "total_amount": 150.00,
+      "amount_due": 150.00,
+      "status": "CANCELLED"
+    },
+    {
+      "id": 13,
+      "customer": 13,
+      "date_issued": "2025-02-25",
+      "due_date": "2025-03-25",
+      "total_amount": 80.00,
+      "amount_due": 80.00,
+      "status": "NEW"
+    },
+    {
+      "id": 14,
+      "customer": 14,
+      "date_issued": "2025-03-01",
+      "due_date": "2025-04-01",
+      "amount_due": 225.50,
+      "total_amount": 225.50,
+      "status": "INPROGRESS"
+    },
+    {
+      "id": 15,
+      "customer": 15,
+      "date_issued": "2025-03-05",
+      "due_date": "2025-04-05",
+      "total_amount": 395.00,
+      "amount_due": 395.00,
+      "status": "COMPLETED"
+    },
+    {
+      "id": 16,
+      "customer": 16,
+      "date_issued": "2025-03-10",
+      "due_date": "2025-04-10",
+      "total_amount": 160.75,
+      "amount_due": 160.75,
+      "status": "CANCELLED"
+    },
+    {
+      "id": 17,
+      "customer": 17,
+      "date_issued": "2025-03-15",
+      "due_date": "2025-04-15",
+      "total_amount": 210.50,
+      "amount_due": 210.50,
+      "status": "NEW"
+    },
+    {
+      "id": 18,
+      "customer": 18,
+      "date_issued": "2025-03-20",
+      "due_date": "2025-04-20",
+      "amount_due": 330.00,
+      "total_amount": 330.00,
+      "status": "INPROGRESS"
+    },
+    {
+      "id": 19,
+      "customer": 19,
+      "date_issued": "2025-03-25",
+      "due_date": "2025-04-25",
+      "total_amount": 150.75,
+      "status": "COMPLETED"
+    },
+    {
+      "id": 20,
+      "customer": 20,
+      "date_issued": "2025-03-30",
+      "due_date": "2025-04-30",
+      "amount_due": 500.00,
+      "total_amount": 500.00,
+      "status": "CANCELLED"
+    }
+  ]
+  

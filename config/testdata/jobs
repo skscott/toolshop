@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "customer": 1,
+    "job_title": "Website Redesign",
+    "description": "Website Redesign",
+    "date_started": "2025-02-01",
+    "status": "IN_PROGRESS",
+    "due_date": "2025-03-01",
+    "hourly_rate": 50.00,
+    "hours_spent": 15
+  },
+  {
+    "id": 2,
+    "customer": 2,
+    "job_title": "SEO Optimization",
+    "description": "SEO Optimization",
+    "date_started": "2025-01-15",
+    "status": "COMPLETED",
+    "due_date": "2025-02-10",
+    "hourly_rate": 45.00,
+    "hours_spent": 20
+  },
+  {
+    "id": 3,
+    "customer": 3,
+    "job_title": "Mobile App Development",
+    "description": "Mobile App Development",
+    "date_started": "2025-02-05",
+    "status": "NEW",
+    "due_date": "2025-04-01",
+    "hourly_rate": 60.00,
+    "hours_spent": 0
+  },
+  {
+    "id": 4,
+    "customer": 4,
+    "job_title": "E-commerce Integration",
+    "description": "E-commerce Integration",
+    "date_started": "2025-01-25",
+    "status": "IN_PROGRESS",
+    "due_date": "2025-02-28",
+    "hourly_rate": 55.00,
+    "hours_spent": 12
+  },
+  {
+    "id": 5,
+    "customer": 5,
+    "job_title": "Data Migration",
+    "description": "Data Migration",
+    "date_started": "2025-01-10",
+    "status": "CANCELLED",
+    "due_date": "2025-02-15",
+    "hourly_rate": 50.00,
+    "hours_spent": 10
+  },
+  {
+    "id": 6,
+    "customer": 6,
+    "job_title": "Cloud Infrastructure Setup",
+    "date_started": "2025-02-03",
+    "status": "IN_PROGRESS",
+    "due_date": "2025-03-15",
+    "hourly_rate": 65.00,
+    "hours_spent": 8
+  },
+  {
+    "id": 7,
+    "customer": 7,
+    "job_title": "Cybersecurity Audit",
+    "date_started": "2025-01-20",
+    "status": "COMPLETED",
+    "due_date": "2025-02-05",
+    "hourly_rate": 70.00,
+    "hours_spent": 25
+  },
+  {
+    "id": 8,
+    "customer": 8,
+    "job_title": "Network Setup",
+    "date_started": "2025-01-30",
+    "status": "IN_PROGRESS",
+    "due_date": "2025-03-10",
+    "hourly_rate": 50.00,
+    "hours_spent": 18
+  },
+  {
+    "id": 9,
+    "customer": 9,
+    "job_title": "Branding Consultation",
+    "date_started": "2025-02-07",
+    "status": "NEW",
+    "due_date": "2025-02-20",
+    "hourly_rate": 40.00,
+    "hours_spent": 0
+  },
+  {
+    "id": 10,
+    "customer": 10,
+    "job_title": "Social Media Strategy",
+    "date_started": "2025-02-01",
+    "status": "COMPLETED",
+    "due_date": "2025-02-14",
+    "hourly_rate": 45.00,
+    "hours_spent": 30
+  }
+]

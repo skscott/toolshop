@@ -1,0 +1,20 @@
+cat <<EOL > .gitignore
+# Virtual environment
+.venv/
+
+# Django-related
+*.sqlite3
+*.pyc
+__pycache__/
+db.sqlite3
+/media/
+staticfiles/
+.env
+
+# VS Code & JetBrains IDE
+.vscode/
+.idea/
+
+# Migrations (optional: commit only when stable)
+**/migrations/*.py
+!**/migrations/

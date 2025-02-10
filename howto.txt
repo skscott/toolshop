@@ -1,0 +1,71 @@
+Mark the Strings for Translation
+
+You can mark the strings (like the 'New', 'In Progress', etc.) for translation using gettext_lazy.
+
+Here's how you can modify your status_choices to support multiple languages:
+
+from django.utils.translation import gettext_lazy as _
+
+status_choices = [
+    ('NEW', _('New')),
+    ('IN_PROGRESS', _('In Progress')),
+    ('COMPLETED', _('Completed')),
+    ('CANCELLED', _('Cancelled')),
+]
+4. Compile Translations
+
+After adding the translations, run:
+
+python manage.py compilemessages
+
+from django.utils import translation
+translation.activate('es')  # Activates Spanish translation
+
+When you need to fetch the correct label based on the language, you can do something like this:
+
+def get_status_label(status, lang='en'):
+    return status_choices.get(lang, {}).get(status, status)
+
+# Example
+status = 'NEW'
+print(get_status_label(status, lang='es'))  # Outputs: Nuevo
+
+The error "CommandError: Can't find msguniq. Make sure you have GNU gettext tools 0.15 or newer installed" 
+happens because Django relies on the GNU gettext utilities for handling translations, and the msguniq tool is part of that.
+Fix: Install gettext
+
+To resolve this, you'll need to install the GNU gettext tools on your system.
+For Ubuntu/Debian-based systems:
+
+sudo apt-get install gettext
+
+Verify Installation
+
+After installing, you can check that the msguniq command is available:
+
+msguniq --version
+
+Ensure LOCALE_PATHS is a list of paths:
+
+In your settings.py, modify the LOCALE_PATHS setting:
+mkdir -p config/locale
+
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR, 'config', 'locale'),
+]
+
+Run makemessages Command:
+
+After setting this up, run the makemessages command again:
+
+python manage.py makemessages -l en
+python manage.py makemessages -l nl
+python manage.py makemessages -l fr
+
+This will generate translation files in the config/locale/ directory.
+
+In Views/Python code:
+
+from django.utils.translation import gettext as _
+
+status = _('New')

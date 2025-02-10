@@ -1,0 +1,43 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-10 14:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: invoices/models.py:13 jobs/models.py:12
+msgid "New"
+msgstr ""
+
+#: invoices/models.py:14
+msgid "Paid"
+msgstr ""
+
+#: invoices/models.py:15
+msgid "Pendimg"
+msgstr ""
+
+#: invoices/models.py:16 jobs/models.py:15
+msgid "Cancelled"
+msgstr ""
+
+#: invoices/models.py:17 jobs/models.py:13
+msgid "In Progress"
+msgstr ""
+
+#: invoices/models.py:18 jobs/models.py:14
+msgid "Completed"
+msgstr ""
