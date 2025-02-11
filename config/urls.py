@@ -6,12 +6,11 @@ from inventory.views import InventoryViewSet
 from invoices.views import InvoicesViewSet
 from jobs.views import JobsViewSet
 from .views import CustomObtainAuthToken, UserViewSet
-from customers.views import CustomersViewSet, CustomerWithInvoicesViewSet
+from customers.views import CustomersViewSet
 
 router = DefaultRouter()
 router.register('users', UserViewSet)
 router.register('customers', CustomersViewSet)
-router.register('customers-with-invoices', CustomerWithInvoicesViewSet, basename='customer-invoices')
 router.register('inventory', InventoryViewSet)
 router.register('invoices', InvoicesViewSet)
 router.register('jobs', JobsViewSet)

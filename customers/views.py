@@ -16,10 +16,16 @@ class CustomersViewSet(viewsets.ModelViewSet):
     authentication_classes = (TokenAuthentication, SessionAuthentication)
     permission_classes = (IsAuthenticated,)
 
-class CustomerWithInvoicesViewSet(viewsets.ReadOnlyModelViewSet):
+class CustomersInvoicesViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Customer.objects.prefetch_related('invoices').all().order_by('id')
     serializer_class = CustomersSerializer
 
+class CustomerInvoicesView(generics.ListAPIView):
+    serializer_class = CustomersSerializer
+
+    def get_queryset(self):
+        customer_id = self.kwargs['customer_id']
+        return Customer.objects.filter(id=customer_id).prefetch_related('invoices').all().order_by('id')
 
 class CustomerBulkCreateView(generics.CreateAPIView):
     queryset = Customer.objects.all()
