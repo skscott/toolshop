@@ -1,14 +1,19 @@
-from django.http import HttpResponsePermanentRedirect
+from rest_framework.views import APIView
+from rest_framework.response import Response
 from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.response import Response
 from rest_framework.authtoken.models import Token
-from rest_framework import status
+from rest_framework import status, viewsets
+
 from django.contrib.auth import get_user_model
-from config.serializers import UserSerializer
+from django.http import HttpResponsePermanentRedirect
+
+from .serializers import UserSerializer, UIComponentSerializer
+from .models import UIComponent
 
 from rest_framework import viewsets
-from django.contrib.auth import get_user_model
-from .serializers import UserSerializer
+from .models import UIComponent
+from .serializers import UIComponentSerializer
 
 User = get_user_model()
 
@@ -35,3 +40,8 @@ class CustomObtainAuthToken(ObtainAuthToken):
             return Response({'token': token.key, 'user': user_data})
         except Token.DoesNotExist:
             return Response({'error': 'Token does not exist'}, status=status.HTTP_400_BAD_REQUEST)
+        
+
+class UIComponentViewSet(viewsets.ModelViewSet):
+    queryset = UIComponent.objects.all()
+    serializer_class = UIComponentSerializer

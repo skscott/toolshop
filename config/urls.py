@@ -5,10 +5,11 @@ from rest_framework.routers import DefaultRouter
 from inventory.views import InventoryViewSet
 from invoices.views import InvoicesViewSet
 from jobs.views import JobsViewSet
-from .views import CustomObtainAuthToken, UserViewSet
+from .views import CustomObtainAuthToken, UIComponentViewSet, UserViewSet
 from customers.views import CustomersViewSet
 
 router = DefaultRouter()
+router.register('ui-components', UIComponentViewSet)
 router.register('users', UserViewSet)
 router.register('customers', CustomersViewSet)
 router.register('inventory', InventoryViewSet)
@@ -21,9 +22,7 @@ urlpatterns = [
     
     path('api/authenticate/', CustomObtainAuthToken.as_view()),
     path("api-auth/", include("rest_framework.urls")),
-    
-
-    
+       
     path('api/customers/', include('customers.urls')),  # Ensure this line is correct
     path('api/jobs/', include('jobs.urls')),
     path('api/invoices/', include('invoices.urls')),
