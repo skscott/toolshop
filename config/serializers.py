@@ -32,3 +32,8 @@ class UIComponentSerializer(serializers.ModelSerializer):
     class Meta:
         model = UIComponent
         fields = ['name', 'is_visible', 'allowed_groups']
+
+class UIComponentSimpleSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = UIComponent
+        fields = ['id', 'name', 'is_visible']
