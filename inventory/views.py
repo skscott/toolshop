@@ -1,11 +1,11 @@
 from rest_framework import viewsets
-from rest_framework.authentication import TokenAuthentication, SessionAuthentication
-from rest_framework.permissions import IsAuthenticated
-from .models import Inventory
-from .serializers import InventorySerializer
+from .models import Inventory, InventoryItem
+from .serializers import InventorySerializer, InventoryItemSerializer
 
 class InventoryViewSet(viewsets.ModelViewSet):
     queryset = Inventory.objects.all()
     serializer_class = InventorySerializer
-    # authentication_classes = (TokenAuthentication, SessionAuthentication)
-    # permission_classes = (IsAuthenticated,)
+
+class InventoryItemViewSet(viewsets.ModelViewSet):
+    queryset = InventoryItem.objects.all()
+    serializer_class = InventoryItemSerializer

@@ -141,6 +141,7 @@ INSTALLED_APPS += [
     'jobs',
     'invoices',
     'inventory',
+    'sales',
     'settings',
     'config',
     'django_countries',

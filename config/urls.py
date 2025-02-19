@@ -26,6 +26,7 @@ urlpatterns = [
     path('api/customers/', include('customers.urls')),  # Ensure this line is correct
     path('api/jobs/', include('jobs.urls')),
     path('api/invoices/', include('invoices.urls')),
-    path('api/inventory/', include('inventory.urls')),
+    path('api/inventory/', include('inventory.urls')), # Inventory API
+     path('api/', include('sales.urls')),  # Sales API
     path('api/settings/', include('settings.urls')),
 ]
