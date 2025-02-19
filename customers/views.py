@@ -6,22 +6,22 @@ from rest_framework import status
 
 from invoices.models import Invoice
 from .models import Customer
-from .serializers import CustomersSerializer, CustomerBulkCreateSerializer
+from .serializers import CustomersInvoicesSerializer, CustomersSerializer, CustomerBulkCreateSerializer
 from invoices.serializers import InvoiceSerializer
 
 class CustomersViewSet(viewsets.ModelViewSet):
     queryset = Customer.objects.all()
     serializer_class = CustomersSerializer
 
-    authentication_classes = (TokenAuthentication, SessionAuthentication)
-    permission_classes = (IsAuthenticated,)
+    # authentication_classes = (TokenAuthentication, SessionAuthentication)
+    # permission_classes = (IsAuthenticated,)
 
 class CustomersInvoicesViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Customer.objects.prefetch_related('invoices').all().order_by('id')
     serializer_class = CustomersSerializer
 
 class CustomerInvoicesView(generics.ListAPIView):
-    serializer_class = CustomersSerializer
+    serializer_class = CustomersInvoicesSerializer
 
     def get_queryset(self):
         customer_id = self.kwargs['customer_id']

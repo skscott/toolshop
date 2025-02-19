@@ -4,6 +4,11 @@ from invoices.serializers import InvoiceSerializer
 from .models import Customer
 
 class CustomersSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Customer
+        fields = '__all__'
+
+class CustomersInvoicesSerializer(serializers.ModelSerializer):
     invoices = InvoiceSerializer(many=True, read_only=True)
     
     class Meta:

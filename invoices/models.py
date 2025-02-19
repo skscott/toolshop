@@ -5,10 +5,12 @@ from django.utils.translation import gettext_lazy as _
 
 class Invoice(models.Model):
     customer = models.ForeignKey(Customer, on_delete=models.CASCADE, related_name="invoices")  # Customer who made the purchase
+    invoice_number = models.CharField(max_length=20, unique=True, blank=True)
     date_issued = models.DateField(auto_now_add=True)  # Date the invoice was created
     due_date = models.DateField()  # Due date for payment
     total_amount = models.DecimalField(max_digits=10, decimal_places=2)  # Total amount for the invoice
     tax_amount = models.DecimalField(max_digits=10, decimal_places=2, default=0)  # Tax amount (if any)
+    
     status_choices = [
         ('NEW',  _('New')),
         ('PAID',  _('Paid')),
@@ -26,6 +28,13 @@ class Invoice(models.Model):
 
     def __str__(self):
         return f"Invoice {self.invoice_number} - {self.customer.name}"
+
+    def save(self, *args, **kwargs):
+        if not self.invoice_number:
+            # Use self.pk if available, otherwise fetch the next available ID
+            next_id = self.pk or (Invoice.objects.latest('id').id + 1 if Invoice.objects.exists() else 1)
+            self.invoice_number = f"INV-{next_id:06d}"  # Format: INV-000001
+        super().save(*args, **kwargs)
 
 class InvoiceItem(models.Model):
     invoice = models.ForeignKey(Invoice, related_name='invoice_items', on_delete=models.CASCADE)
