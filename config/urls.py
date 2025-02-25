@@ -5,7 +5,7 @@ from rest_framework.routers import DefaultRouter
 from inventory.views import InventoryViewSet
 from invoices.views import InvoicesViewSet
 from jobs.views import JobsViewSet
-from .views import CustomObtainAuthToken, UIComponentViewSet, UserViewSet
+from .views import CustomObtainAuthToken, LogoutView, UIComponentViewSet, UserViewSet
 
 router = DefaultRouter()
 router.register('api/ui-components', UIComponentViewSet)
@@ -15,6 +15,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('api/authenticate/', CustomObtainAuthToken.as_view()),
+    path('api/logout/', LogoutView.as_view(), name='auth_logout'),
     path("api-auth/", include("rest_framework.urls")),
 
     # Ensure customers API is correctly structured

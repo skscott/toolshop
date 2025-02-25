@@ -166,3 +166,53 @@ LOCALE_PATHS = [
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '%(asctime)s [%(levelname)s] %(name)s: %(message)s',
+            'datefmt': '%Y-%m-%d %H:%M:%S',  # Customize the date format
+        },
+        'simple': {
+            'format': '%(levelname)s %(message)s',
+        },
+    },
+    'handlers': {
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': 'et_info.log',
+            'formatter': 'verbose',  # Use the verbose formatter
+        },
+        'console': {
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose',  # Use the verbose formatter
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file', 'console'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+        'custom': {
+            'handlers': ['file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+        # Logger for CSRF activity
+        'django.security.csrf': {
+            'handlers': ['file', 'console'],
+            'level': 'DEBUG',  # Change to INFO if DEBUG is too verbose
+            'propagate': False,
+        },
+        # Logger for session activity
+        'django.contrib.sessions': {
+            'handlers': ['file', 'console'],
+            'level': 'DEBUG',
+            'propagate': False,
+        },
+    },
+}

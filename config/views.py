@@ -4,9 +4,12 @@ from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.response import Response
 from rest_framework.authtoken.models import Token
 from rest_framework import status, viewsets
+from rest_framework.permissions import IsAuthenticated
 
 from django.contrib.auth import get_user_model
 from django.http import HttpResponsePermanentRedirect
+
+from utils.etlogger import log_function_call
 
 from .serializers import UIComponentSimpleSerializer, UserSerializer, UIComponentSerializer
 from .models import UIComponent
@@ -41,7 +44,17 @@ class CustomObtainAuthToken(ObtainAuthToken):
         except Token.DoesNotExist:
             return Response({'error': 'Token does not exist'}, status=status.HTTP_400_BAD_REQUEST)
         
+class LogoutView(APIView):
+    permission_classes = (IsAuthenticated,)
 
+    @log_function_call
+    def post(self, request):
+        try:
+            request.user.auth_token.delete()
+            return Response(status=status.HTTP_205_RESET_CONTENT)
+        except Exception as e:
+            return Response(status=status.HTTP_400_BAD_REQUEST)
+        
 class UIComponentViewSet(viewsets.ModelViewSet):
     queryset = UIComponent.objects.all()
     serializer_class = UIComponentSimpleSerializer
