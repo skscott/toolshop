@@ -8,11 +8,7 @@ from jobs.views import JobsViewSet
 from .views import CustomObtainAuthToken, UIComponentViewSet, UserViewSet
 
 router = DefaultRouter()
-router.register('ui-components', UIComponentViewSet)
-router.register('users', UserViewSet)
-router.register('inventory', InventoryViewSet)
-router.register('invoices', InvoicesViewSet)
-router.register('jobs', JobsViewSet)
+router.register('api/ui-components', UIComponentViewSet)
 
 urlpatterns = [
     path("", include(router.urls)),  # Registers UI components, users, inventory, invoices, jobs
@@ -24,8 +20,8 @@ urlpatterns = [
     # Ensure customers API is correctly structured
     path('api/', include('customers.urls')),  # Ensures /api/customers/ structure
     path('api/', include('invoices.urls')),   # Invoices API under /api/invoices/
-    path('api/jobs/', include('jobs.urls')),
-    path('api/invoices/', include('invoices.urls')),
-    path('api/inventory/', include('inventory.urls')),
-    path('api/settings/', include('settings.urls')),
+    path('api/', include('jobs.urls')),
+    path('api/', include('invoices.urls')),
+    path('api/', include('inventory.urls')),
+    path('api/', include('settings.urls')),
 ]
