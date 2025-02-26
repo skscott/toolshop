@@ -39,7 +39,25 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+]
+
+INSTALLED_APPS += [
+    'rest_framework',
     'rest_framework.authtoken',
+
+    'rest_auth',
+    'rest_auth.registration',
+
+    'corsheaders',
+    'customers',
+    'jobs',
+    'invoices',
+    'inventory',
+    'sales',
+    'settings',
+    'config',
+    'django_countries',
+    'phonenumber_field',
 ]
 
 MIDDLEWARE = [
@@ -134,19 +152,6 @@ DATABASES = {
         'PORT': env("DB_PORT", default="3306")
     }
 }
-INSTALLED_APPS += [
-    'rest_framework',
-    'corsheaders',
-    'customers',
-    'jobs',
-    'invoices',
-    'inventory',
-    'sales',
-    'settings',
-    'config',
-    'django_countries',
-    'phonenumber_field',
-]
 
 REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': [

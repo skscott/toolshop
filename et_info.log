@@ -1,0 +1,106 @@
+2025-02-26 10:45:59 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-26 10:46:17 [INFO] django.server: "GET /api/ui-components HTTP/1.1" 301 0
+2025-02-26 10:46:17 [INFO] django.server: "GET /api/ui-components/ HTTP/1.1" 200 46
+2025-02-26 10:46:18 [INFO] django.server: "GET /api/ui-components/ HTTP/1.1" 200 46
+2025-02-26 10:50:19 [INFO] django.server: "GET /api/ui-components HTTP/1.1" 301 0
+2025-02-26 10:50:19 [INFO] django.server: "GET /api/ui-components/ HTTP/1.1" 200 46
+2025-02-26 10:50:20 [INFO] django.server: "GET /api/ui-components/ HTTP/1.1" 200 46
+2025-02-26 10:50:26 [INFO] django.server: "GET /api/ui-components/ HTTP/1.1" 200 46
+2025-02-26 10:50:27 [INFO] django.server: "GET /api/ui-components/ HTTP/1.1" 200 46
+2025-02-26 10:50:33 [INFO] django.server: "GET /api/ui-components/ HTTP/1.1" 200 46
+2025-02-26 10:50:52 [WARNING] django.request: Bad Request: /api/authenticate/
+2025-02-26 10:50:52 [WARNING] django.server: "POST /api/authenticate/ HTTP/1.1" 400 68
+2025-02-26 10:51:05 [INFO] django.server: "POST /api/authenticate/ HTTP/1.1" 200 236
+2025-02-26 10:51:06 [INFO] django.server: "GET /api/ui-components/ HTTP/1.1" 200 46
+2025-02-26 10:51:31 [INFO] django.server: "GET /api/ui-components/ HTTP/1.1" 200 46
+2025-02-26 10:53:51 [INFO] django.server: "GET /api/ui-components/ HTTP/1.1" 200 46
+2025-02-26 10:53:52 [INFO] django.server: "GET /api/ui-components/ HTTP/1.1" 200 46
+2025-02-26 10:53:56 [INFO] django.server: "OPTIONS /api/logout/ HTTP/1.1" 200 0
+2025-02-26 10:53:56 [WARNING] django.request: Forbidden: /api/logout/
+2025-02-26 10:53:56 [WARNING] django.server: "POST /api/logout/ HTTP/1.1" 403 58
+2025-02-26 10:54:26 [WARNING] django.request: Forbidden: /api/logout/
+2025-02-26 10:54:26 [WARNING] django.server: "POST /api/logout/ HTTP/1.1" 403 58
+2025-02-26 11:01:04 [WARNING] django.request: Forbidden: /api/logout/
+2025-02-26 11:01:04 [WARNING] django.server: "POST /api/logout/ HTTP/1.1" 403 58
+2025-02-26 11:01:14 [WARNING] django.request: Forbidden: /api/logout/
+2025-02-26 11:01:14 [WARNING] django.server: "POST /api/logout/ HTTP/1.1" 403 58
+2025-02-26 11:01:32 [WARNING] django.request: Forbidden: /api/logout/
+2025-02-26 11:01:32 [WARNING] django.server: "POST /api/logout/ HTTP/1.1" 403 58
+2025-02-26 11:01:50 [WARNING] django.request: Forbidden: /api/logout/
+2025-02-26 11:01:50 [WARNING] django.server: "POST /api/logout/ HTTP/1.1" 403 58
+2025-02-26 11:01:59 [INFO] django.server: "GET /api/ui-components HTTP/1.1" 301 0
+2025-02-26 11:01:59 [INFO] django.server: "GET /api/ui-components/ HTTP/1.1" 200 46
+2025-02-26 11:02:18 [WARNING] django.request: Forbidden: /api/logout/
+2025-02-26 11:02:18 [WARNING] django.server: "POST /api/logout/ HTTP/1.1" 403 58
+2025-02-26 11:02:27 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-26 11:13:01 [INFO] django.utils.autoreload: /home/ss/source/toolshop/config/settings.py changed, reloading.
+2025-02-26 11:13:20 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-26 11:14:37 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-26 11:14:48 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-26 11:15:36 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-26 11:17:13 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-26 11:17:40 [INFO] django.server: "OPTIONS /api/authenticate/ HTTP/1.1" 200 0
+2025-02-26 11:17:41 [INFO] django.server: "POST /api/authenticate/ HTTP/1.1" 200 236
+2025-02-26 11:17:42 [INFO] django.server: "GET /api/ui-components/ HTTP/1.1" 200 46
+2025-02-26 11:17:44 [INFO] django.server: "OPTIONS /api/logout/ HTTP/1.1" 200 0
+2025-02-26 11:17:44 [WARNING] django.request: Forbidden: /api/logout/
+2025-02-26 11:17:44 [WARNING] django.server: "POST /api/logout/ HTTP/1.1" 403 58
+2025-02-26 11:18:58 [WARNING] django.request: Forbidden: /api/logout/
+2025-02-26 11:18:58 [WARNING] django.server: "POST /api/logout/ HTTP/1.1" 403 58
+2025-02-26 11:21:29 [WARNING] django.request: Forbidden: /api/logout/
+2025-02-26 11:21:29 [WARNING] django.server: "POST /api/logout/ HTTP/1.1" 403 58
+2025-02-26 11:23:17 [INFO] django.server: "OPTIONS /api/logout HTTP/1.1" 200 0
+2025-02-26 11:23:17 [ERROR] django.request: Internal Server Error: /api/logout
+Traceback (most recent call last):
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8050/api/logout/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2025-02-26 11:23:17 [ERROR] django.server: "POST /api/logout HTTP/1.1" 500 74852
+2025-02-26 11:23:33 [WARNING] django.request: Forbidden: /api/logout/
+2025-02-26 11:23:33 [WARNING] django.server: "POST /api/logout/ HTTP/1.1" 403 58
+2025-02-26 11:25:00 [WARNING] django.request: Not Found: /api/login
+2025-02-26 11:25:00 [WARNING] django.server: "POST /api/login HTTP/1.1" 404 19130
+2025-02-26 11:25:10 [WARNING] django.request: Not Found: /api/login/
+2025-02-26 11:25:10 [WARNING] django.server: "POST /api/login/ HTTP/1.1" 404 19133
+2025-02-26 11:25:26 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-26 11:25:34 [WARNING] django.request: Not Found: /api/login/
+2025-02-26 11:25:34 [WARNING] django.server: "POST /api/login/ HTTP/1.1" 404 19133
+2025-02-26 11:25:46 [INFO] django.server: "POST /api/authenticate/ HTTP/1.1" 200 236
+2025-02-26 11:26:17 [ERROR] django.request: Internal Server Error: /api/logout
+Traceback (most recent call last):
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8050/api/logout/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2025-02-26 11:26:17 [ERROR] django.server: "POST /api/logout HTTP/1.1" 500 73417
+2025-02-26 11:26:23 [INFO] django: Function: post, View: LogoutView, Model: None
+2025-02-26 11:26:31 [INFO] django.server: "POST /api/logout/ HTTP/1.1" 205 0
+2025-02-26 12:52:07 [INFO] django.server: "GET /api/ui-components/ HTTP/1.1" 200 46
+2025-02-26 12:52:43 [INFO] django.server: "POST /api/authenticate/ HTTP/1.1" 200 236
+2025-02-26 12:52:44 [INFO] django.server: "GET /api/ui-components HTTP/1.1" 301 0
+2025-02-26 12:52:44 [INFO] django.server: "GET /api/ui-components/ HTTP/1.1" 200 46
+2025-02-26 12:53:07 [INFO] django.server: "GET /api/ui-components HTTP/1.1" 301 0
+2025-02-26 12:53:07 [INFO] django.server: "GET /api/ui-components/ HTTP/1.1" 200 46
+2025-02-26 12:53:54 [INFO] django.server: "POST /api/authenticate/ HTTP/1.1" 200 236
+2025-02-26 12:53:55 [INFO] django.server: "GET /api/ui-components HTTP/1.1" 301 0
+2025-02-26 12:53:55 [INFO] django.server: "GET /api/ui-components/ HTTP/1.1" 200 46
+2025-02-26 12:55:19 [INFO] django.server: "POST /api/authenticate/ HTTP/1.1" 200 236
+2025-02-26 12:55:19 [INFO] django.server: "GET /api/ui-components HTTP/1.1" 301 0
+2025-02-26 12:55:19 [INFO] django.server: "GET /api/ui-components/ HTTP/1.1" 200 46
