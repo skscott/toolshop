@@ -162,7 +162,11 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.TokenAuthentication',
     ),
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    ),
 }
+
 # AUTH_USER_MODEL = 'config.User'
 LOGIN_URL = '/api-auth/login/'
 LOGIN_REDIRECT_URL = "/api/"

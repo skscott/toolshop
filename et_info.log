@@ -104,3 +104,31 @@ RuntimeError: You called this URL via POST, but the URL doesn't end in a slash a
 2025-02-26 12:55:19 [INFO] django.server: "POST /api/authenticate/ HTTP/1.1" 200 236
 2025-02-26 12:55:19 [INFO] django.server: "GET /api/ui-components HTTP/1.1" 301 0
 2025-02-26 12:55:19 [INFO] django.server: "GET /api/ui-components/ HTTP/1.1" 200 46
+2025-02-26 15:12:38 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-26 15:13:02 [INFO] django.utils.autoreload: /home/ss/source/toolshop/invoices/views.py changed, reloading.
+2025-02-26 15:13:04 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-26 15:16:42 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-26 15:17:42 [WARNING] django.request: Forbidden: /api/ui-components/
+2025-02-26 15:17:42 [WARNING] django.server: "GET /api/ui-components/ HTTP/1.1" 403 58
+2025-02-26 15:17:53 [WARNING] django.request: Bad Request: /api/authenticate/
+2025-02-26 15:17:53 [WARNING] django.server: "POST /api/authenticate/ HTTP/1.1" 400 68
+2025-02-26 15:17:54 [WARNING] django.request: Bad Request: /api/authenticate/
+2025-02-26 15:17:54 [WARNING] django.server: "POST /api/authenticate/ HTTP/1.1" 400 68
+2025-02-26 15:17:59 [INFO] django.server: "POST /api/authenticate/ HTTP/1.1" 200 236
+2025-02-26 15:18:00 [WARNING] django.request: Forbidden: /api/ui-components/
+2025-02-26 15:18:00 [WARNING] django.server: "GET /api/ui-components/ HTTP/1.1" 403 58
+2025-02-26 15:20:05 [INFO] django.utils.autoreload: /home/ss/source/toolshop/config/views.py changed, reloading.
+2025-02-26 15:20:06 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-26 15:20:12 [INFO] django.server: "GET /api/ui-components HTTP/1.1" 301 0
+2025-02-26 15:20:12 [WARNING] django.request: Forbidden: /api/ui-components/
+2025-02-26 15:20:12 [WARNING] django.server: "GET /api/ui-components/ HTTP/1.1" 403 58
+2025-02-26 15:20:13 [WARNING] django.request: Forbidden: /api/ui-components/
+2025-02-26 15:20:13 [WARNING] django.server: "GET /api/ui-components/ HTTP/1.1" 403 58
+2025-02-26 15:20:44 [INFO] django.server: "GET /api/ui-components HTTP/1.1" 301 0
+2025-02-26 15:20:44 [WARNING] django.request: Forbidden: /api/ui-components/
+2025-02-26 15:20:44 [WARNING] django.server: "GET /api/ui-components/ HTTP/1.1" 403 58
+2025-02-26 15:20:49 [WARNING] django.request: Forbidden: /api/ui-components/
+2025-02-26 15:20:49 [WARNING] django.server: "GET /api/ui-components/ HTTP/1.1" 403 58
+2025-02-26 15:26:06 [INFO] django.server: "GET /api/ui-components HTTP/1.1" 301 0
+2025-02-26 15:26:06 [INFO] django.server: "GET /api/ui-components/ HTTP/1.1" 200 46
+2025-02-26 15:26:07 [INFO] django.server: "GET /api/ui-components/ HTTP/1.1" 200 46

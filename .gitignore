@@ -18,3 +18,4 @@ staticfiles/
 # Migrations (optional: commit only when stable)
 **/migrations/*.py
 !**/migrations/
+*.log

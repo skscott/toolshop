@@ -1,5 +1,8 @@
 from rest_framework import viewsets, generics, status
 from rest_framework.response import Response
+from rest_framework.authentication import TokenAuthentication, SessionAuthentication
+from rest_framework.permissions import IsAuthenticated
+
 from .models import Invoice
 from .serializers import InvoiceSerializer, InvoiceBulkCreateSerializer
 
@@ -7,9 +10,15 @@ class InvoicesViewSet(viewsets.ModelViewSet):
     queryset = Invoice.objects.all()
     serializer_class = InvoiceSerializer
 
+    # authentication_classes = (TokenAuthentication, SessionAuthentication)
+    # permission_classes = (IsAuthenticated,)
+
 class InvoiceBulkCreateView(generics.CreateAPIView):
     queryset = Invoice.objects.all()
     serializer_class = InvoiceBulkCreateSerializer
+
+    # authentication_classes = (TokenAuthentication, SessionAuthentication)
+    # permission_classes = (IsAuthenticated,)
 
     def create(self, request, *args, **kwargs):
         # Ensure the serializer handles a list of objects
