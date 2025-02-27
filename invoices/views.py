@@ -10,15 +10,9 @@ class InvoicesViewSet(viewsets.ModelViewSet):
     queryset = Invoice.objects.all()
     serializer_class = InvoiceSerializer
 
-    # authentication_classes = (TokenAuthentication, SessionAuthentication)
-    # permission_classes = (IsAuthenticated,)
-
 class InvoiceBulkCreateView(generics.CreateAPIView):
     queryset = Invoice.objects.all()
     serializer_class = InvoiceBulkCreateSerializer
-
-    # authentication_classes = (TokenAuthentication, SessionAuthentication)
-    # permission_classes = (IsAuthenticated,)
 
     def create(self, request, *args, **kwargs):
         # Ensure the serializer handles a list of objects
