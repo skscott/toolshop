@@ -270,3 +270,6 @@ RuntimeError: You called this URL via POST, but the URL doesn't end in a slash a
 2025-02-27 13:56:19 [INFO] django.server: "GET /api/invoices/ HTTP/1.1" 200 3796
 2025-02-27 13:56:24 [INFO] django.server: "GET /api/invoices/ HTTP/1.1" 200 3796
 2025-02-27 13:56:27 [INFO] django.server: "GET /api/customers/ HTTP/1.1" 200 7544
+2025-02-27 13:57:33 [INFO] django.server: "OPTIONS /undefined/logout/ HTTP/1.1" 200 0
+2025-02-27 13:57:33 [WARNING] django.request: Not Found: /undefined/logout/
+2025-02-27 13:57:33 [WARNING] django.server: "POST /undefined/logout/ HTTP/1.1" 404 5345
