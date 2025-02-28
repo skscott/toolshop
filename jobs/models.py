@@ -5,7 +5,7 @@ from customers.models import Customer
 from django.utils.translation import gettext_lazy as _
 
 class Job(models.Model):
-    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)  # Customer requesting the service
+    customer = models.ForeignKey(Customer, on_delete=models.CASCADE, related_name="jobs")  # Customer who made the purchase
     job_title = models.CharField(max_length=255)  # Title or brief description of the job
     description = models.TextField()  # Detailed description of the job
     status_choices = [

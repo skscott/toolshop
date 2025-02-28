@@ -273,3 +273,209 @@ RuntimeError: You called this URL via POST, but the URL doesn't end in a slash a
 2025-02-27 13:57:33 [INFO] django.server: "OPTIONS /undefined/logout/ HTTP/1.1" 200 0
 2025-02-27 13:57:33 [WARNING] django.request: Not Found: /undefined/logout/
 2025-02-27 13:57:33 [WARNING] django.server: "POST /undefined/logout/ HTTP/1.1" 404 5345
+2025-02-27 21:24:44 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-27 21:24:53 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-27 21:25:00 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-27 21:25:02 [WARNING] django.request: Forbidden: /api/customers/
+2025-02-27 21:25:02 [WARNING] django.server: "GET /api/customers/ HTTP/1.1" 403 58
+2025-02-27 21:25:06 [WARNING] django.request: Forbidden: /api/customers/
+2025-02-27 21:25:06 [WARNING] django.server: "GET /api/customers/ HTTP/1.1" 403 27
+2025-02-27 21:25:20 [INFO] django.server: "POST /api/authenticate/ HTTP/1.1" 200 236
+2025-02-27 21:25:23 [WARNING] django.request: Forbidden: /api/customers/
+2025-02-27 21:25:23 [WARNING] django.server: "GET /api/customers/ HTTP/1.1" 403 27
+2025-02-27 21:25:24 [WARNING] django.request: Forbidden: /api/customers/
+2025-02-27 21:25:24 [WARNING] django.server: "GET /api/customers/ HTTP/1.1" 403 27
+2025-02-27 21:25:27 [INFO] django.server: "GET /api/customers/ HTTP/1.1" 200 7544
+2025-02-27 21:25:50 [INFO] django.server: "GET /api/ui-components HTTP/1.1" 301 0
+2025-02-27 21:25:50 [WARNING] django.request: Forbidden: /api/ui-components/
+2025-02-27 21:25:50 [WARNING] django.server: "GET /api/ui-components/ HTTP/1.1" 403 58
+2025-02-27 21:25:57 [INFO] django.server: "GET /api/ui-components HTTP/1.1" 301 0
+2025-02-27 21:25:57 [INFO] django.server: "GET /api/ui-components/ HTTP/1.1" 200 46
+2025-02-27 21:26:01 [INFO] django.server: "GET /api/customers/1/invoices HTTP/1.1" 301 0
+2025-02-27 21:26:01 [WARNING] django.request: Forbidden: /api/customers/1/invoices/
+2025-02-27 21:26:01 [WARNING] django.server: "GET /api/customers/1/invoices/ HTTP/1.1" 403 58
+2025-02-27 21:26:07 [INFO] django.server: "GET /api/customers/1/invoices HTTP/1.1" 301 0
+2025-02-27 21:26:07 [INFO] django.server: "GET /api/customers/1/invoices/ HTTP/1.1" 200 3699
+2025-02-27 21:28:36 [INFO] django.server: "GET /api/customers/1/invoices HTTP/1.1" 301 0
+2025-02-27 21:28:36 [INFO] django.server: "GET /api/customers/1/invoices/ HTTP/1.1" 200 3699
+2025-02-27 21:28:56 [WARNING] django.request: Not Found: /api/customers/1/jobs/
+2025-02-27 21:28:56 [WARNING] django.server: "GET /api/customers/1/jobs/ HTTP/1.1" 404 19165
+2025-02-27 21:29:07 [WARNING] django.request: Not Found: /api/customers/1/jobs/
+2025-02-27 21:29:07 [WARNING] django.server: "GET /api/customers/1/jobs/ HTTP/1.1" 404 19165
+2025-02-27 21:29:12 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-27 21:29:14 [WARNING] django.request: Not Found: /api/customers/1/jobs/
+2025-02-27 21:29:14 [WARNING] django.server: "GET /api/customers/1/jobs/ HTTP/1.1" 404 19165
+2025-02-27 21:30:44 [INFO] django.utils.autoreload: /home/ss/source/toolshop/customers/urls.py changed, reloading.
+2025-02-27 21:30:45 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-27 21:31:45 [INFO] django.utils.autoreload: /home/ss/source/toolshop/customers/views.py changed, reloading.
+2025-02-27 21:31:47 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-27 21:32:11 [INFO] django.utils.autoreload: /home/ss/source/toolshop/customers/views.py changed, reloading.
+2025-02-27 21:32:12 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-27 21:32:39 [INFO] django.utils.autoreload: /home/ss/source/toolshop/customers/urls.py changed, reloading.
+2025-02-27 21:32:40 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-27 21:32:42 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-27 21:33:16 [INFO] django.utils.autoreload: /home/ss/source/toolshop/customers/views.py changed, reloading.
+2025-02-27 21:33:17 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-27 21:33:47 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-27 21:34:25 [INFO] django.utils.autoreload: /home/ss/source/toolshop/customers/views.py changed, reloading.
+2025-02-27 21:34:27 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-27 21:35:20 [INFO] django.utils.autoreload: /home/ss/source/toolshop/customers/views.py changed, reloading.
+2025-02-27 21:35:21 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-27 21:37:02 [INFO] django.utils.autoreload: /home/ss/source/toolshop/customers/views.py changed, reloading.
+2025-02-27 21:37:03 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-27 21:38:38 [INFO] django.utils.autoreload: /home/ss/source/toolshop/customers/views.py changed, reloading.
+2025-02-27 21:38:40 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-27 21:41:52 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-27 21:42:20 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-27 21:42:36 [INFO] django.utils.autoreload: /home/ss/source/toolshop/customers/urls.py changed, reloading.
+2025-02-27 21:42:38 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-27 21:43:57 [INFO] django.utils.autoreload: /home/ss/source/toolshop/customers/urls.py changed, reloading.
+2025-02-27 21:43:58 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-27 21:44:23 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-27 21:45:20 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-27 21:46:45 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-27 21:46:49 [ERROR] django.request: Internal Server Error: /api/customers/1/jobs/
+Traceback (most recent call last):
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 713, in to_representation
+    return [
+           ^
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1930, in _fetch_all
+    self._prefetch_related_objects()
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1320, in _prefetch_related_objects
+    prefetch_related_objects(self._result_cache, *self._prefetch_related_lookups)
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 2355, in prefetch_related_objects
+    raise AttributeError(
+AttributeError: Cannot find 'jobs' on Customer object, 'jobs' is an invalid parameter to prefetch_related()
+2025-02-27 21:46:49 [ERROR] django.server: "GET /api/customers/1/jobs/ HTTP/1.1" 500 146887
+2025-02-27 21:48:04 [ERROR] django.request: Internal Server Error: /api/customers/1/jobs/
+Traceback (most recent call last):
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 713, in to_representation
+    return [
+           ^
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1930, in _fetch_all
+    self._prefetch_related_objects()
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1320, in _prefetch_related_objects
+    prefetch_related_objects(self._result_cache, *self._prefetch_related_lookups)
+  File "/home/ss/source/toolshop/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 2355, in prefetch_related_objects
+    raise AttributeError(
+AttributeError: Cannot find 'jobs' on Customer object, 'jobs' is an invalid parameter to prefetch_related()
+2025-02-27 21:48:04 [ERROR] django.server: "GET /api/customers/1/jobs/ HTTP/1.1" 500 146887
+2025-02-27 21:48:44 [INFO] django.utils.autoreload: /home/ss/source/toolshop/jobs/models.py changed, reloading.
+2025-02-27 21:48:45 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-27 21:48:49 [INFO] django.utils.autoreload: /home/ss/source/toolshop/jobs/models.py changed, reloading.
+2025-02-27 21:48:50 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-27 21:48:54 [INFO] django.server: "GET /api/customers/1/jobs/ HTTP/1.1" 200 1539
+2025-02-27 21:49:32 [INFO] django.server: "GET /api/ui-components/ HTTP/1.1" 200 46
+2025-02-27 21:49:32 [INFO] django.server: "GET /api/ui-components/ HTTP/1.1" 200 46
+2025-02-27 21:49:32 [INFO] django.server: "GET /api/customers/1/ HTTP/1.1" 200 396
+2025-02-27 21:49:32 [INFO] django.server: "GET /api/customers/1/invoices/ HTTP/1.1" 200 3699
+2025-02-27 21:49:32 [INFO] django.server: "GET /api/customers/1/jobs/ HTTP/1.1" 200 1539
+2025-02-27 21:49:49 [INFO] django.server: "GET /api/customers/1/jobs/ HTTP/1.1" 200 1539
+2025-02-27 21:50:58 [INFO] django.server: "GET /api/customers/1/jobs/ HTTP/1.1" 200 1539
+2025-02-27 21:50:58 [INFO] django.server: "GET /api/customers/1/jobs/ HTTP/1.1" 200 1539
+2025-02-27 21:51:23 [INFO] django.server: "GET /api/customers/1/jobs/ HTTP/1.1" 200 1539
+2025-02-27 21:51:43 [INFO] django.server: "GET /api/customers/1/jobs/ HTTP/1.1" 200 1539
+2025-02-27 21:51:53 [INFO] django.server: "GET /api/ui-components/ HTTP/1.1" 200 46
+2025-02-27 21:52:01 [INFO] django.server: "GET /api/customers/1/jobs/ HTTP/1.1" 200 1539
+2025-02-27 21:52:03 [INFO] django.server: "GET /api/ui-components HTTP/1.1" 301 0
+2025-02-27 21:52:03 [INFO] django.server: "GET /api/customers/1/ HTTP/1.1" 200 396
+2025-02-27 21:52:03 [INFO] django.server: "GET /api/ui-components/ HTTP/1.1" 200 46
+2025-02-27 21:52:03 [INFO] django.server: "GET /api/customers/1/jobs/ HTTP/1.1" 200 1539
+2025-02-27 21:52:03 [INFO] django.server: "GET /api/customers/1/invoices/ HTTP/1.1" 200 3699
+2025-02-27 21:53:20 [INFO] django.server: "GET /api/customers/1/jobs/ HTTP/1.1" 200 1539
+2025-02-27 21:53:21 [INFO] django.server: "GET /api/customers/1/jobs/ HTTP/1.1" 200 1539
+2025-02-27 21:53:22 [INFO] django.server: "GET /api/customers/1/jobs/ HTTP/1.1" 200 1539
+2025-02-27 21:53:27 [INFO] django.server: "GET /api/ui-components HTTP/1.1" 301 0
+2025-02-27 21:53:27 [INFO] django.server: "GET /api/ui-components/ HTTP/1.1" 200 46
+2025-02-27 21:53:33 [INFO] django.server: "GET /api/ui-components/ HTTP/1.1" 200 46
+2025-02-27 21:53:33 [INFO] django.server: "GET /api/customers/1/ HTTP/1.1" 200 396
+2025-02-27 21:53:33 [INFO] django.server: "GET /api/customers/1/invoices/ HTTP/1.1" 200 3699
+2025-02-27 21:53:33 [INFO] django.server: "GET /api/customers/1/jobs/ HTTP/1.1" 200 1539
+2025-02-27 21:53:35 [INFO] django.server: "GET /api/customers/1/jobs/ HTTP/1.1" 200 1539
+2025-02-27 21:53:36 [INFO] django.server: "GET /api/customers/1/jobs/ HTTP/1.1" 200 1539
+2025-02-27 21:53:37 [INFO] django.server: "GET /api/customers/1/jobs/ HTTP/1.1" 200 1539
+2025-02-27 21:54:09 [INFO] django.server: "GET /api/ui-components/ HTTP/1.1" 200 46
+2025-02-27 21:54:09 [INFO] django.server: "OPTIONS /api/customers/1/jobs/ HTTP/1.1" 200 0
+2025-02-27 21:54:09 [INFO] django.server: "GET /api/ui-components/ HTTP/1.1" 200 46
+2025-02-27 21:54:09 [INFO] django.server: "GET /api/customers/1/ HTTP/1.1" 200 396
+2025-02-27 21:54:10 [INFO] django.server: "GET /api/customers/1/invoices/ HTTP/1.1" 200 3699
+2025-02-27 21:54:10 [INFO] django.server: "GET /api/customers/1/jobs/ HTTP/1.1" 200 1539
+2025-02-27 21:55:07 [INFO] django.server: "GET /api/customers/1/ HTTP/1.1" 200 396
+2025-02-27 21:55:07 [INFO] django.server: "GET /api/ui-components/ HTTP/1.1" 200 46
+2025-02-27 21:55:08 [INFO] django.server: "GET /api/customers/1/jobs/ HTTP/1.1" 200 1539
+2025-02-27 21:55:08 [INFO] django.server: "GET /api/customers/1/invoices/ HTTP/1.1" 200 3699
+2025-02-27 21:55:18 [INFO] django.server: "OPTIONS /api/jobs/3/ HTTP/1.1" 200 0
+2025-02-27 21:55:18 [WARNING] django.request: Bad Request: /api/jobs/3/
+2025-02-27 21:55:18 [WARNING] django.server: "PATCH /api/jobs/3/ HTTP/1.1" 400 49

@@ -1,6 +1,7 @@
 from rest_framework import serializers
 
 from invoices.serializers import InvoiceSerializer
+from jobs.serializers import JobsSerializer
 from .models import Customer
 
 class CustomersSerializer(serializers.ModelSerializer):
@@ -10,6 +11,13 @@ class CustomersSerializer(serializers.ModelSerializer):
 
 class CustomersInvoicesSerializer(serializers.ModelSerializer):
     invoices = InvoiceSerializer(many=True, read_only=True)
+    
+    class Meta:
+        model = Customer
+        fields = '__all__'
+
+class CustomersJobsSerializer(serializers.ModelSerializer):
+    jobs = JobsSerializer(many=True, read_only=True)
     
     class Meta:
         model = Customer
