@@ -192,7 +192,7 @@ LOGGING = {
         'file': {
             'level': 'INFO',
             'class': 'logging.FileHandler',
-            'filename': 'et_info.log',
+            'filename': 'toolshop.log',
             'formatter': 'verbose',  # Use the verbose formatter
         },
         'console': {

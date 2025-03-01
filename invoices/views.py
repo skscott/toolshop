@@ -6,10 +6,31 @@ from rest_framework.permissions import IsAuthenticated
 from .models import Invoice
 from .serializers import InvoiceSerializer, InvoiceBulkCreateSerializer
 
+from logging import getLogger
+from utils.etlogger import log_function_call
+
+logger = getLogger('django')
 class InvoicesViewSet(viewsets.ModelViewSet):
     queryset = Invoice.objects.all()
     serializer_class = InvoiceSerializer
 
+    @log_function_call
+    def list(self, request, *args, **kwargs):
+        ret = super(InvoicesViewSet, self).list(request)
+        return Response(ret.data)
+    
+    @log_function_call
+    def create(self, request, *args, **kwargs):
+        return super(InvoicesViewSet, self).create(request)
+    
+    @log_function_call
+    def retrieve(self, request, *args, **kwargs):
+        return super(InvoicesViewSet, self).retrieve(request)
+    
+    @log_function_call
+    def update(self, request, *args, **kwargs):
+        return super(InvoicesViewSet, self).update(request)
+    
 class InvoiceBulkCreateView(generics.CreateAPIView):
     queryset = Invoice.objects.all()
     serializer_class = InvoiceBulkCreateSerializer
