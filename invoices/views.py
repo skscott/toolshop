@@ -2,6 +2,7 @@ from rest_framework import viewsets, generics, status
 from rest_framework.response import Response
 from rest_framework.authentication import TokenAuthentication, SessionAuthentication
 from rest_framework.permissions import IsAuthenticated
+from rest_framework.decorators import action
 
 from .models import Invoice
 from .serializers import InvoiceSerializer, InvoiceBulkCreateSerializer
@@ -31,6 +32,19 @@ class InvoicesViewSet(viewsets.ModelViewSet):
     def update(self, request, *args, **kwargs):
         return super(InvoicesViewSet, self).update(request)
     
+    # Add a custom action to get the last invoice
+    @action(detail=False, methods=['get'])
+    def last_invoice(self, request):
+        """
+        Retrieve the last invoice record.
+        """
+        last_invoice = Invoice.objects.last()  # Get the last invoice by primary key
+        if last_invoice:
+            serializer = self.get_serializer(last_invoice)
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        else:
+            return Response({"detail": "No invoices found."}, status=status.HTTP_404_NOT_FOUND)
+        
 class InvoiceBulkCreateView(generics.CreateAPIView):
     queryset = Invoice.objects.all()
     serializer_class = InvoiceBulkCreateSerializer
