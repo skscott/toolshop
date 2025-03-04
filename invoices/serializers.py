@@ -1,7 +1,11 @@
 from rest_framework import serializers
+
+from customers.models import Customer
 from .models import Invoice
 
 class InvoiceSerializer(serializers.ModelSerializer):
+    customer = serializers.PrimaryKeyRelatedField(queryset=Customer.objects.all())
+    
     class Meta:
         model = Invoice
         fields = '__all__'

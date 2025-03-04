@@ -20,9 +20,30 @@ class InvoicesViewSet(viewsets.ModelViewSet):
         ret = super(InvoicesViewSet, self).list(request)
         return Response(ret.data)
     
+    # @log_function_call
+    # def create(self, request, *args, **kwargs):
+    #     return super(InvoicesViewSet, self).create(request)
+    
     @log_function_call
     def create(self, request, *args, **kwargs):
-        return super(InvoicesViewSet, self).create(request)
+        logger.debug(f"Incoming request data: {request.data}")
+
+         # Map customerId to customer
+        if 'customer_id' in request.data:
+            request.data['customer'] = request.data.pop('customer_id')
+
+        serializer = self.get_serializer(data=request.data)
+        if not serializer.is_valid():
+            logger.error(f"Serializer errors: {serializer.errors}")
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            response = super(InvoicesViewSet, self).create(request, *args, **kwargs)
+            logger.debug(f"Response data: {response.data}")
+            return response
+        except Exception as e:
+            logger.error(f"Error creating invoice: {str(e)}", exc_info=True)
+            return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
     
     @log_function_call
     def retrieve(self, request, *args, **kwargs):
